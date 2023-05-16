@@ -41,9 +41,9 @@ public class Basics {
         System.out.println(7 + 5);
 
         /* TODO (Task 1): Write a line of code below that prints the string
-         *                Hello World!
+         *                Hello World! done
          */
-
+        System.out.println("Hello World!");
 
 
         /* 4. In Python, we could declare variables using a simple assignment
