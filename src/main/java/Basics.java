@@ -41,7 +41,7 @@ public class Basics {
         System.out.println(7 + 5);
 
         /* TODO (Task 1): Write a line of code below that prints the string
-         *                Hello World! done
+         *                Hello World!
          */
         System.out.println("Hello World!");
 
@@ -104,6 +104,16 @@ public class Basics {
             System.out.println("Current count: " + i);
         }
 
+        // System.out.println(split("Idol Long Oolong Vertical Europe University Toyota"));
+        int[] nums = {1, 2, 3, 4, 5, 6, 7};
+        System.out.println(oddSum(nums));
+        int[] nums2 = {1};
+        System.out.println(oddSum(nums2));
+        int[] nums3 = {};
+        System.out.println(oddSum(nums3));
+        int[] nums4 = {1, 2, 3, 4, 5};
+        System.out.println(oddSum(nums4));
+
 
     }
 
@@ -147,6 +157,11 @@ public class Basics {
         StringBuilder ret = new StringBuilder();
 
         // Fill in the rest of the body here
+        String[] splitWords = to_split.split(" ");
+        for (String w : splitWords){
+            char firstChar = w.charAt(0);
+            ret.append(firstChar);
+        }
 
         return ret.toString();
     }
@@ -174,7 +189,11 @@ public class Basics {
          *                You can index into arrays as we do in Python
          *                (e.g. arr[i] gives you the item at index i).
          */
-
+        if (arr.length > 1){
+            for (int i = 1; i < arr.length; i+=2){
+                current_sum += arr[i];
+            }
+        }
         return current_sum;
     }
 
